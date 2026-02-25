@@ -31,7 +31,8 @@ Este projeto foi construído utilizando exclusivamente tecnologias base da web:
 
 
 ### 3. Tela de Criação de Conta
-*(Adicione aqui a imagem da sua tela de criação de conta seguindo o mesmo padrão de link acima)*
+
+** Faltando
 
 ## Como executar o projeto
 
