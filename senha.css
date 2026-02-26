@@ -1,106 +1,148 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libertinus+Math&family=Libertinus+Mono&display=swap');
 
+:root {
+    --indigo-dye: #1b4965;
+    --columbia-blue: #cae9ff;
+    --picton-blue: #5fa8d3;
+    --text-color: #000814;
+    --white: #ffffff;
+}
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background: radial-gradient(circle at 25%, #1b4965ff, #cae9ffff, #5fa8d3ff);
+
+body {
+    background: radial-gradient(circle at 25%, var(--indigo-dye), var(--columbia-blue), var(--picton-blue));
     font-family: "Libertinus Math", system-ui;
-    font-style: normal;
-    font-weight: 400;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    color: #000814;
-    height: 100vh;
-    background-position: 50%;
+    color: var(--text-color);
+    min-height: 100vh;
     background-size: cover;
-    display: block;
+    background-position: center;
 }
-.barra{
-    background-color: #1b4965ff;
+
+header {
+    padding: 1rem 2rem;
+    background-color: var(--columbia-blue);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     width: 100%;
-    height: 5px;
-    margin-top: 4px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
 }
-main{
+
+.voltar {
+    color: var(--indigo-dye);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    font-family: "Inter", sans-serif;
+}
+
+main {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
-    height: calc(100vh - 80px);
+    margin-top: 80px;
+    min-height: calc(100vh - 80px);
 }
-form{
+
+form {
     background-color: transparent;
     border: 2px solid rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-    color: #000814;
-    backdrop-filter: blur(50px);
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    padding: 30px 40px;
-    display:flex;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px;
+    padding: 40px;
+    width: 100%;
+    max-width: 450px;
+    display: flex;
     flex-direction: column;
     gap: 25px;
-    outline: none;
 }
-h1{
-    color:#ffffff;
+
+.titulo {
     text-align: center;
-    font-size: 35px;
-    text-shadow: 2px 2px 2px #778da9;
-}
-p{
-    font-size: 17px;
-    padding-top: 15px;
-}
-input::placeholder{
-    color: #2f5376;
-}
-input{
-    width: 100%;
-    padding: 0.6rem;
-    border: 2px solid #1b4965ff;
-    outline: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.campo{
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
-button{
-    color: #ffffff;
-    font-size: 16px;
-    border-radius: 20px;
-    padding: 10px;
-    align-self: center;
+
+h1 {
+    color: var(--white);
+    font-size: 2.2rem;
+    text-shadow: 2px 2px 2px #778da9;
+}
+
+.barra {
+    background-color: var(--indigo-dye);
+    width: 100%;
+    height: 5px;
+    border-radius: 2px;
+}
+
+.instrucao {
     text-align: center;
-    width: 200px;
-    border: 1px solid #1b4965ff;
+    font-family: "Inter", sans-serif;
+    font-size: 0.95rem;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+label {
+    font-family: "Inter", sans-serif;
+    font-size: 0.95rem;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid var(--indigo-dye);
+    outline: none;
+    border-radius: 5px;
+    font-family: "Inter", sans-serif;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: var(--picton-blue);
+}
+
+input::placeholder {
+    color: #2f5376;
+}
+
+button {
+    color: var(--white);
+    font-size: 1.1rem;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    border-radius: 20px;
     background-image: linear-gradient(#012a4a, #468faf);
+    padding: 12px;
+    width: 100%;
+    border: 1px solid var(--indigo-dye);
     border-right-width: 4px;
     border-bottom-width: 4px;
-    font-weight: 400;
     cursor: pointer;
+    transition: transform 0.1s, filter 0.3s;
+    margin-top: 5px;
 }
-.voltar{
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 25px;
+
+button:active {
+    transform: translateY(2px);
+    border-bottom-width: 2px;
+    border-right-width: 2px;
 }
-header{
-    padding: 1rem 2rem;
-    background-color: #cae9ffff;
-    text-align: left;
-    display: flex;
-    align-self: center;
-    justify-self: flex-start;
-    position: fixed/top;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 100%;
+
+button:hover {
+    filter: brightness(1.2);
 }

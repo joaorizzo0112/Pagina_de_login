@@ -4,28 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="senha.css">
-    <title>Recuperação de senha</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <title>Recuperação de Senha</title>
 </head>
-
 <body>
     <header>
-        <div>
-            <a class="voltar" href="index.html">Voltar</a>
-        </div>
+        <a class="voltar" href="index.html">← Voltar</a>
     </header>
+
     <main>
-        <form action="">
-        <div class="titulo">
-            <h1>Redefinição de senha</h1>
-            <div class="barra"></div>
-            <p>Informe um e-mail para que seja enviado o link de redefinição de senha</p>
-        </div>
-        
-        <div class="campo">
-            <input type="email" name="email" id="email" placeholder="E-mail">
-        </div>
-        <button class="botao">Enviar link de recuperação</button>
-    </form>
+        <form action="" method="POST">
+            <div class="titulo">
+                <h1>Redefinir Senha</h1>
+                <div class="barra"></div>
+            </div>
+            
+            <p class="instrucao">Informe o e-mail cadastrado para receber o link de redefinição de senha.</p>
+            
+            <div class="campo">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+            </div>
+            
+            <button type="submit" class="botao">Enviar link</button>
+        </form>
     </main>
 </body>
 </html>

@@ -1,35 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Página de login</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <title>Página de Login</title>
 </head>
-
 <body>
-    <form action="">
+    <form action="" method="POST">
         <div class="titulo">
             <h1>Login</h1>
             <div class="barra"></div>
         </div>
+        
         <div class="campo">
-            <input type="email" placeholder="E-mail">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
         </div>
+        
         <div class="campo">
-            <input type="password" placeholder="Senha">
-            <p class="senha"><a href="recupera_senha.html" target="_blank">Esqueceu sua senha?</a></p>
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+            <div class="senha-link">
+                <a href="recupera_senha.html">Esqueceu sua senha?</a>
+            </div>
         </div>
+        
         <div class="lembrar">
-            <input type="checkbox">
-            <p>Lembrar senha</p>
+            <input type="checkbox" id="lembrar_senha" name="lembrar_senha">
+            <label for="lembrar_senha">Lembrar senha</label>
         </div>
-        <button class="botao">Login</button>
-        <div>
-            <p class="criar">Ainda não tem uma conta?<a href="criar_conta.html" target="_blank"> Cadastre-se</a></p>
+        
+        <button type="submit" class="botao">Entrar</button>
+        
+        <div class="criar">
+            <p>Ainda não tem uma conta? <a href="criar_conta.html">Cadastre-se</a></p>
         </div>
     </form>
 </body>
-
 </html>
