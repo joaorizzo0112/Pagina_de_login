@@ -23,17 +23,15 @@ Este projeto foi construído utilizando exclusivamente tecnologias base da web:
 ## Demonstração das Telas
 
 ### 1. Tela de Login
-<img width="1914" height="857" alt="image" src="https://github.com/user-attachments/assets/ab3c7cc4-0183-43d3-b4fd-fe2339ee36dc" />
+<img width="1903" height="936" alt="image" src="https://github.com/user-attachments/assets/1ac71022-a16a-4fff-8df4-277f35ecc8f6" />
 
 
 ### 2. Tela de Redefinição de Senha
-<img width="1907" height="861" alt="image" src="https://github.com/user-attachments/assets/bb5aeef7-1d24-4c83-b118-fc98422847d1" />
-
+<img width="1914" height="1078" alt="image" src="https://github.com/user-attachments/assets/b623f425-c654-47ee-8814-1e9008db0c85" />
 
 ### 3. Tela de Criação de Conta
 
-<img width="1827" height="904" alt="image" src="https://github.com/user-attachments/assets/77a088ce-eaec-4c94-85ba-7c3eeeb5f1af" />
-
+<img width="1891" height="951" alt="image" src="https://github.com/user-attachments/assets/4586be34-8e46-4af7-b1bb-376881187440" />
 
 ## Como executar o projeto
 
