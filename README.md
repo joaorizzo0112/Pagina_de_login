@@ -32,7 +32,8 @@ Este projeto foi construído utilizando exclusivamente tecnologias base da web:
 
 ### 3. Tela de Criação de Conta
 
-** Faltando
+<img width="1827" height="904" alt="image" src="https://github.com/user-attachments/assets/77a088ce-eaec-4c94-85ba-7c3eeeb5f1af" />
+
 
 ## Como executar o projeto
 
@@ -40,4 +41,4 @@ Como o projeto é composto inteiramente por arquivos estáticos, não é necess�
 
 1. Clone este repositório para a sua máquina:
    ```bash
-   git clone [https://github.com/joaorizzo0112/Pagina_de_login.git](https://github.com/joaorizzo0112/Pagina_de_login.git)
+   git clone https://github.com/joaorizzo0112/Pagina_de_login.git](https://github.com/joaorizzo0112/Pagina_de_login.git)
